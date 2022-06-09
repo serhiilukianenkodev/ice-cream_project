@@ -1,11 +1,11 @@
 @import './base/normalize';
-@import './example';
 @import './base/reset';
 @import './base/common';
 @import './utils/mixins';
 @import './utils/visually-hidden';
 @import './components/container';
 @import './utils/vars';
+@import './components/button';
 
 @import './layout/header';
 @import './layout/hero';

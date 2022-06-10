@@ -1,1 +1,383 @@
 // Hero scss
+@keyframes show {
+    from {
+        opacity: 0.6;
+    }
+    to {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0.99;
+    }
+}
+
+
+
+.hero {
+    position: relative;
+    background-color: var(--bg-pink);
+    animation: show 1500ms;
+
+}
+
+.hero__container {
+    position: relative;
+    overflow: hidden;
+
+    padding-top: 194px;
+    padding-bottom: 158px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-between;
+    }
+    @media screen and (min-width: 768px) {
+        padding-top: 102px;
+        padding-bottom: 16px;
+         }
+    
+        @media screen and (min-width: 1280px) {
+             padding-top: 157px;
+             padding-bottom: 60px;
+         }
+}
+
+.titlebox {
+    position: relative;
+    z-index: 1;
+}
+
+.hero__title {
+    max-width: 218px;
+    margin-bottom: 20px;
+
+    font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 1.15;
+    text-transform: uppercase;
+    color: var(--cl-light);
+
+    @media screen and (min-width: 768px) {
+        max-width: 162px;
+
+        font-size: 22px;
+        line-height: 1.14;
+
+    }
+
+     @media screen and (min-width: 1280px) {
+        max-width: 277px;
+        margin-bottom: 24px;
+
+        font-size: 38px;
+        line-height: 1.16;
+    }
+
+    &--accent {
+        font-size: 48px;
+        line-height: 0.965;
+        color: var(--cl-red);
+
+        @media screen and (min-width: 768px) {
+            font-size: 34px;
+            line-height: 0.905;
+        
+        }
+        
+        @media screen and (min-width: 1280px) {
+            font-size: 58px;
+        }
+    }
+}
+
+.titlebox__list {
+    display: flex;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 20px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+        gap: 12px;
+    }
+}
+
+.titlebox__link {
+    display: flex;
+    align-items: center;
+    height: 24px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 8px;
+    line-height: 1.25;
+    border-radius: 20px;
+    background-color: var(--bg-light);
+    color: var(--cl-red);
+
+
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: var(--bg-hover);
+    }
+
+    @media screen and (min-width: 1280px) {
+        height: 40px;
+        padding-left: 21px;
+        padding-right: 21px;
+
+        font-size: 14px;
+        line-height: 1.29;
+    }
+
+    &--accent {
+        background-color: var(--bg-red);
+        color: var(--cl-light);
+
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: var(--bg-accent-hover);
+        }
+    }
+}
+
+
+.titlebox__bottom {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+
+        animation-name: jug-of-milk;
+        animation-duration: 1500ms;
+
+    } 
+}
+
+@keyframes jug-of-milk {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.titlebox__description {
+    @media screen and (min-width: 768px) {
+        max-width: 120px;
+        padding-top: 26px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+        max-width: 200px;
+        padding-top: 46px;
+    }
+}
+
+.titlebox__text {
+    margin-bottom: 7px;
+
+    font-size: 8px;
+    line-height: 1.5;
+    color: var(--cl-light);
+
+    @media screen and (min-width: 1280px) {
+        margin-bottom: 20px;
+
+        font-size: 14px;
+        line-height: 1.4;
+    }
+}
+
+.titlebox__button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: transparent;
+
+    transition-property: opacity;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    @media screen and (min-width: 1280px) {
+        width: 26px;
+        height: 26px;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        opacity: 0.8;
+    }
+}
+
+.circle {
+    position: absolute;
+    top: 21%;
+    left: 8%;
+    display: block;
+    width: 346px;
+    height: 346px;
+
+    border-radius: 50%;
+    background-color: var(--cl-pink);
+
+    @media screen and (min-width: 321px) {
+        width: 290px;
+        height: 290px;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 335px;
+        height: 335px;
+        left: 30%;
+    }
+
+    @media screen and (min-width: 768px) {
+        top: 10%;
+        left: 35%;
+        width: 335px;
+        height: 335px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        top: 7%;
+        left: 41%;
+        width: 554px;
+        height: 554px;
+    }
+}
+
+.hero__icecream {
+    position: absolute;
+    bottom: 0;
+    left: 35%;
+
+    animation-name: icecream;
+    animation-duration: 1500ms;
+
+    @media screen and (min-width: 480px) {
+        left: 45%;
+    }
+    @media screen and (min-width: 768px) {
+        left: 45%;
+    }
+    @media screen and (min-width: 1280px) {
+        left: 50%;
+    }
+}
+
+@keyframes icecream {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.hero__girl {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        animation-name: girl;
+        animation-duration: 1500ms;
+    }
+}
+
+@keyframes girl {
+    from {
+        transform: translate(100%);
+    }
+    to {
+        transform: translate(0);
+    }
+}
+
+.hero__stats {
+    display: none;
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+}
+
+
+.hero-stats__item {
+    position: relative;
+    padding-right: 10px;
+
+    z-index: 1;
+    @media screen and (min-width: 1280px){
+        padding-right: 16px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: var(--bg-light);
+        border-radius: 50%;
+        z-index: -1;
+
+        animation-name: circle;
+        animation-duration: 1500ms;
+        @media screen and (min-width: 1280px) {
+            top: -3;
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+@keyframes circle {
+    from {
+        transform: translate(-50%, 50%);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0%, 0%);
+        opacity: 1;
+    }
+}
+
+.hero-stats__content {
+    font-size: 8px;
+    line-height: 1.25;
+    color: var(--cl-light);
+    text-align: end;
+
+    &--accent {
+        font-family: var(--font-secondary);
+        font-size: 28px;
+        line-height: 1.14;
+        color: var(--cl-red);
+    }
+    @media screen and (min-width: 1280px) {
+        font-size: 14px;
+        line-height: 1.28;
+
+        &--accent {
+            font-size: 46px;
+            line-height: 1.15;
+        }
+    }
+}

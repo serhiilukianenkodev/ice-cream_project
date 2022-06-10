@@ -8,7 +8,9 @@
       </h1>
       <ul class="titlebox__list list">
         <li class="titlebox__item">
-          <a class="titlebox__link link" href="#products">Products</a>
+          <a class="titlebox__link link titlebox__link--accent" href="#products"
+            >Products</a
+          >
         </li>
         <li class="titlebox__item">
           <a class="titlebox__link link" href="#about">How it’s made?</a>
@@ -21,7 +23,7 @@
               ./images/hero/hero-milk-1x.png 1x,
               ./images/hero/hero-milk-2x.png 2x
             "
-            media="(min-width: 1200px)"
+            media="(min-width: 1280px)"
             type="image/png"
           />
           <source
@@ -43,27 +45,10 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et
           </p>
-          <button class="titlebox__button">
-            <svg>
-              <use></use>
-            </svg>
-          </button>
+          <button class="titlebox__button"></button>
         </div>
       </div>
     </div>
-
-    <ul class="hero__stats hero-stats list">
-      <li class="hero-stats__item">
-        <p class="hero-stats__content">
-          <span class="hero-stats__content--accent">16</span>cafes
-        </p>
-      </li>
-      <li class="hero-stats__item">
-        <p class="hero-stats__content">
-          <span class="hero-stats__content--accent">23</span>food trucks
-        </p>
-      </li>
-    </ul>
     <div class="circle"></div>
     <picture>
       <source
@@ -71,7 +56,7 @@
           ./images/hero/hero-ice-1x.png 1x,
           ./images/hero/hero-ice-2x.png 2x
         "
-        media="(min-width: 1200px)"
+        media="(min-width: 1280px)"
         type="image/png"
       />
       <source
@@ -91,7 +76,7 @@
         type="image/png"
       />
       <img
-        class="titlebox__img"
+        class="hero__icecream"
         src="./images/hero/hero-ice-mob-1x.png"
         alt="ice cream"
       />
@@ -102,7 +87,7 @@
           ./images/hero/hero-girl-1x.png 1x,
           ./images/hero/hero-girl-2x.png 2x
         "
-        media="(min-width: 1200px)"
+        media="(min-width: 1280px)"
         type="image/png"
       />
       <source
@@ -114,10 +99,22 @@
         type="image/png"
       />
       <img
-        class="titlebox__img"
+        class="hero__girl"
         src="./images/hero/hero-girl-tab-1x.png"
         alt="girl with ice cream"
       />
     </picture>
+    <ul class="hero__stats hero-stats list">
+      <li class="hero-stats__item">
+        <p class="hero-stats__content">
+          <span class="hero-stats__content--accent">16 <br /></span>cafes
+        </p>
+      </li>
+      <li class="hero-stats__item">
+        <p class="hero-stats__content">
+          <span class="hero-stats__content--accent">23<br /></span>food trucks
+        </p>
+      </li>
+    </ul>
   </div>
 </section>

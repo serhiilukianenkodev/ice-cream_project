@@ -10,5 +10,5 @@ var swiper = new Swiper('.mySwiper', {
     deley: 3000,
     disableOnInteraction: false,
   },
-  speed: 700,
+  speed: 900,
 });

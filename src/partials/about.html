@@ -3,26 +3,56 @@
   <div class="container">
     <p class="about__subtitle">tradition and love</p>
     <h2 class="about__title">how it's made?</h2>
-    <img
-      class="about__picture"
-      src="./images/about/about-cow-mob-1x.png"
-      alt="Cow with milk"
-    />
 
-    <div class="about__content">
-      <p class="about__description">
-        <span class="about__description-accent"
-          >Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-          justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-          erat at justo fringilla.</span
-        ><br /><br />
-        Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-        Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
-        suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-        tincidunt.<br /><br />
-        Aliquam erat volutpat. Aenean accumsan.
-      </p>
-      <button class="about__button" type="button">Read more</button>
+    <div class="about__wrap">
+      <picture>
+        <source
+          srcset="
+            ./images/about/about-cow-1x.png 1x,
+            ./images/about/about-cow-2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/about/about-cow-tab-1x.png 1x,
+            ./images/about/about-cow-tab-2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <source
+          srcset="
+            ./images/about/about-cow-mob-1x.png 1x,
+            ./images/about/about-cow-mob-2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
+        <img
+          class="about__picture"
+          src="./images/about/about-cow-1x.png"
+          alt="cow with milk"
+        />
+      </picture>
+
+      <div class="about__content">
+        <p class="about__description-accent">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about__description">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt. <br /><br />
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+
+        <button class="about__button button" type="button">Read more</button>
+      </div>
     </div>
   </div>
 </section>

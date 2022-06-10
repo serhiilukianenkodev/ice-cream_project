@@ -1,16 +1,28 @@
-:root{
-    --font-family-primary: 'DM Sans', sans-serif;
-    --font-family-secondary: 'Titan One',
-    cursive;
+:root {
+  // Font-family
+  --font-primary: 'DM Sans', sans-serif;
+  --font-secondary: 'Titan One', cursive;
 
-    --main-title-color: #D41443;
-    --second-title-color: #FFA5BA; 
-    
-    --dark-btn-bg:#D41342;
-    --light-btn-bg: #FFFFFF;
-    --dark-btn-color: #FFFFFF;
-    --light-btn-color: #D41443;
+  // Font color
+  --cl-light: #ffffff;
+  --cl-dark: #000000;
+  --cl-brown: #907e82;
+  --cl-red: #d41443;
+  --cl-pink: #ffa5ba;
 
-    --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  // Background color
+  --bg-light: #ffffff;
+  --bg-pink: #ffb8ca;
+  --bg-lightpink: #fff5f6;
+  --bg-beige: #f0d1a5;
+  --bg-green: #c2e297;
+  --bg-red: #d41443;
+  --bg-hover: #ecebeb;
+  --bg-accent-hover: #c7133e;
+  --bg-modal: #e17992;
+  --bg-grey: #fafafa;
+
+  //   Transition
+  --transition-duration: 250ms;
+  --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-

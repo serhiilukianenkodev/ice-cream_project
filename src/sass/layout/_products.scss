@@ -51,6 +51,13 @@
   }
 }
 
+.main-title {
+  margin-bottom: 150px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
+}
+
 .prod-title {
   font-family: var(--font-secondary);
   font-style: normal;
@@ -92,12 +99,12 @@
 
   color: var(--cl-light);
   @media screen and (min-width: 768px) {
-    margin-top: 32px;
+    // margin-top: 32px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
-    margin-top: 65px;
+    // margin-top: 65px;
   }
 }
 
@@ -126,6 +133,7 @@
   letter-spacing: 0.04em;
 
   color: var(--cl-light);
+
   @media screen and (min-width: 768px) {
     font-size: 14px;
     line-height: 1.78;
@@ -139,12 +147,15 @@
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
-  // @media screen and (min-width: 768px) {
-  //   max-width: 473px;
-  // }
-  // @media screen and (min-width: 1280px) {
-  //   width: 329px;
-  // }
+  @media screen and (min-width: 768px) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 50px;
+  }
 }
 
 .ice-cream {
@@ -157,7 +168,7 @@
 
   background: var(--bg-pink);
   border-radius: 24px;
-  margin-top: 140px;
+  margin-top: 160px;
   @media screen and (min-width: 768px) {
     margin-left: 16px;
   }
@@ -179,7 +190,7 @@
   background-repeat: no-repeat;
   top: 0;
 
-  transform: translateY(-50%);
+  transform: translateY(-65%);
   @media screen and (min-width: 768px) {
     background-image: url(../images/products/icecream1-tab-1x.png);
     width: 224px;
@@ -200,7 +211,7 @@
   position: relative;
   background: var(--bg-beige);
   border-radius: 24px;
-  margin-top: 140px;
+  margin-top: 160px;
   @media screen and (min-width: 768px) {
     margin-left: 16px;
   }
@@ -221,7 +232,7 @@
   background-repeat: no-repeat;
   top: 0;
 
-  transform: translateY(-50%);
+  transform: translateY(-65%);
   @media screen and (min-width: 768px) {
     background-image: url(../images/products/icecream2-tab-1x.png);
     width: 224px;
@@ -242,7 +253,7 @@
   position: relative;
   background: var(--bg-green);
   border-radius: 24px;
-  margin-top: 140px;
+  margin-top: 160px;
   @media screen and (min-width: 768px) {
     margin-left: 16px;
   }
@@ -265,7 +276,7 @@
 
   top: 0;
 
-  transform: translateY(-50%);
+  transform: translateY(-65%);
   @media screen and (min-width: 768px) {
     background-image: url(../images/products/icecream3-tab-1x.png);
     width: 224px;

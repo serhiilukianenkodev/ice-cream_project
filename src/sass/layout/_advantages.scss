@@ -45,37 +45,37 @@
         width: 50px;
         height: 50px;       
         background-repeat: no-repeat;
-        background-size: contain;
         
         @media screen and (min-width: 768px){
             margin-bottom: 40px;
         }
 
     }
+
+
+    &:nth-child(1)::before{
+        background-image: url(../images/advanteges/icon1.svg);
+    }
+    &:nth-child(2)::before {
+        background-image: url(../images/advanteges/icon2.svg);
+    }
+    &:nth-child(3)::before {
+        background-image: url(../images/advanteges/icon3.svg);
+    }
 }
 
-.advantages__item:nth-child(1)::before{
-    background-image: url(../images/advanteges/icon1.svg);
-}
-.advantages__item:nth-child(2)::before {
-    background-image: url(../images/advanteges/icon2.svg);
-}
-.advantages__item:nth-child(3)::before {
-    background-image: url(../images/advanteges/icon3.svg);
-}
 .advantages__mark{
     margin-bottom: 18px;
     display: block;
-    font-family: var(--font-family-secondary);
+    font-family: var(--font-secondary);
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
     text-transform: uppercase;
-    color: #D41443;
+    color: var(--cl-red);
 
     @media screen and (min-width: 768px){
         font-size: 48px;
-        line-height: 1.14;
         margin-bottom: 13px;
     }
 

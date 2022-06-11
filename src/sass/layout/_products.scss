@@ -1,17 +1,17 @@
 // products sass
 
 .wrapper-container {
-  width: 100%;
-  margin: 0 auto;
-  min-width: 320px;
-  max-width: 480px;
-  padding-left: 20px;
-  padding-right: 20px;
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-    padding-left: 34px;
-    padding-right: 34px;
-  }
+  // width: 100%;
+  // margin: 0 auto;
+  // min-width: 320px;
+  // max-width: 480px;
+  // padding-left: 20px;
+  // padding-right: 20px;
+  // @media screen and (min-width: 768px) {
+  //   max-width: 768px;
+  //   padding-left: 34px;
+  //   padding-right: 34px;
+  // }
   @media screen and (min-width: 1280px) {
     max-width: 1280px;
     padding-left: 115px;
@@ -310,9 +310,14 @@
   // background-position: center;
 }
 
+.button-img {
+  width: 12px;
+  height: 12px;
+}
+
 .button-arrow:hover,
 .button-arrow:focus {
-  background-color: green;
+  background-color: var(--bg-hover);
 }
 
 // .arrow-icon {

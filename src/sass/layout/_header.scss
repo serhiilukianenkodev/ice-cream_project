@@ -33,7 +33,7 @@
 
 .logo__title {
     font-size: 26px;
-    line-height: 30px;
+    line-height: 1.15;
     color: var(--cl-red);
     font-family: var(--font-secondary);
     text-transform: uppercase;
@@ -112,11 +112,12 @@
     opacity: 1;
 
     &.is-open {
+        pointer-events: none;
         opacity: 0;  
     }
         @media screen and (min-width: 768px) {
-        margin-left: auto;
-        margin-right: 32px;
+            margin-left: auto;
+            margin-right: 32px;
     }
 
         @media screen and (min-width: 1280px) {

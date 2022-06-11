@@ -3,7 +3,7 @@
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 1;
+    z-index: 3;
     transform: translateX(-50%);
 }
 
@@ -15,7 +15,6 @@
 
     @media screen and (min-width: 768px) {
         padding-top: 32px;
-        justify-content: flex-start;
     }
 
     @media screen and (min-width: 1280px) {
@@ -28,6 +27,8 @@
     display: flex;
     align-items: center;
     gap: 20px;
+
+    @media screen and (min-width: 808px) and (max-width: 1280px) {}
 }
 
 .logo__title {
@@ -40,6 +41,7 @@
 
 .nav {
     display: none;
+
     @media screen and (min-width: 1280px) {
         display: block;
     }
@@ -60,6 +62,7 @@
     transition-property: color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
+
     &:hover,
     &:focus,
     &:active {
@@ -73,7 +76,10 @@
     padding-left: 37px;
     padding-right: 37px;
     font-size: 16px;
-
+    
+    transition-property: opacity;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
 
     @media screen and (min-width: 768px) {
         display: block;
@@ -91,12 +97,49 @@
 }
 
 
-.mobile__button {
-    @media screen and (min-width: 768px) {
+.mobile-button {
+    width: 20px;
+    height: 16px;
+    background-image: url(./../images/header/burger.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: transparent;
+
+    transition-property: opacity;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+    opacity: 1;
+
+    &.is-open {
+        opacity: 0;  
+    }
+        @media screen and (min-width: 768px) {
         margin-left: auto;
         margin-right: 32px;
     }
-    @media screen and (min-width: 1280px) {
+
+        @media screen and (min-width: 1280px) {
             display: none;
     }
+
+    @media screen and (max-width: 1279px) {
+        &.is-open~.header__button {
+            opacity: 0;
+        }
+    }
+
+    &--cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        margin: 0;
+        background-image: url(./../images/header/cross.svg);
+
+        @media screen and (min-width: 768px) {
+            right: 32px;
+        }
+    }
 }
+
+

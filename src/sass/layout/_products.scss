@@ -146,15 +146,17 @@
 .ice-cream,
 .ice-coffe,
 .milkshakes {
-  padding-top: 140px;
+  padding-top: 120px;
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
   @media screen and (min-width: 768px) {
+    padding-top: 100px;
     padding-left: 20px;
     padding-right: 20px;
   }
   @media screen and (min-width: 1280px) {
+    padding-top: 160px;
     padding-left: 40px;
     padding-right: 40px;
     padding-bottom: 50px;

@@ -3,7 +3,7 @@
     padding-bottom: 24px;
     background-image: linear-gradient(to top, #FFF5F6 77%, #FFFFFF 23%);
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
     padding-top: 40px;
     padding-bottom: 20px;
     background-image: linear-gradient(to top, #FFF5F6 80%, #FFFFFF 20%);
@@ -17,7 +17,7 @@
 }
 
 .container-contacts {
-    padding-left: 20px;
+        padding-left: 20px;
         padding-right: 20px;
         margin: 0 auto;
     
@@ -49,7 +49,7 @@
     margin-bottom: 32px;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {    
+@media screen and (min-width: 768px) {    
     display: flex;
     justify-content: center;
     margin-bottom: 40px;
@@ -57,8 +57,6 @@
 }
 
 @media (min-width: 1280px) {
-    display: flex;
-    justify-content: center;
     margin-bottom: 60px;
 }
 }
@@ -109,22 +107,22 @@
     font-weight: 500;
     font-size: 12px;
     line-height: 1.86;
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
         font-size: 14px;
         margin-bottom: 12px;
 }
 @media (min-width: 1280px) {
     font-size: 16px;
+    margin-bottom: 8px;
 }
 }
 
 .card-list__text {
     margin-bottom: 24px;
-    font-weight: 500;
     font-size: 12px;
     line-height: 1.5;
     color: #907E82;  
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.66;
         margin-bottom: 32px;
@@ -167,7 +165,7 @@
     line-height: 1.86;
     color: #000000;
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
         font-size: 14px;
     }
 
@@ -181,14 +179,13 @@
     line-height: 1.83;
     color: var(--cl-pink);
     font-weight: 500;
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.86;
     }
 
     @media (min-width: 1280px) {
         font-size: 16px;
-        line-height: 1.86;
     }
 }
 
@@ -215,14 +212,13 @@
     color: var(--cl-brown);
     transition: color var(--transition-duration) var(--transition-timing-function);
 
-@media screen and (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
         font-size: 14px;
         line-height: 1.83;
     }
 
     @media (min-width: 1280px) {
         font-size: 16px;
-        line-height: 1.83;
     }
 }
 .contacts__link:hover,

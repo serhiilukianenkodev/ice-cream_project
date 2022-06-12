@@ -200,8 +200,13 @@
 .titlebox__button {
     width: 18px;
     height: 18px;
+
     border-radius: 50%;
     border: transparent;
+    background-image: url(./../images/products/right.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 
     transition-property: opacity;
     transition-duration: var(--transition-duration);

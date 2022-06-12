@@ -127,6 +127,7 @@
     @media screen and (max-width: 1279px) {
         &.is-open~.header__button {
             opacity: 0;
+            pointer-events: none;
         }
     }
 

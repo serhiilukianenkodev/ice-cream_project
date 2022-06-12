@@ -94,7 +94,7 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
-  margin-top: 20px;
+  margin-top: 50px;
 
   text-align: center;
   letter-spacing: 0.04em;
@@ -102,12 +102,12 @@
 
   color: var(--cl-light);
   @media screen and (min-width: 768px) {
-    // margin-top: 32px;
+    margin-top: 25px;
   }
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: 1.13;
-    // margin-top: 65px;
+    margin-top: 20px;
   }
 }
 
@@ -193,6 +193,7 @@
   content: '';
   background-image: url(../images/products/icecream1-mob-1x.png);
   background-repeat: no-repeat;
+
   top: 0;
 
   transform: translateY(-65%);

@@ -24,64 +24,102 @@
 }
 
 .contacts-modal {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(1);
+
+        width: 100%;
+        height: 100%;
+        padding: 25px 20px;
+
+        background: var(--bg-modal);
+
+        overflow: auto;
+
+        transition-property: transform;
+        transition-duration: var(--transition-duration);
+        transition-timing-function: var(--transition-timing-function);
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            padding: 40px;
+        }
+
+        @media screen and (min-width: 768px) {
+        width: 600px;
+        padding: 40px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            width: 60%;
+            height: 100%;
+        }
+    }
+
+.contacts-modal__btn {
+    @media screen and (max-width: 480px) {
+        top: 10px;
+    }
+
     position: absolute;
-    padding: 40px 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(1);
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background-color: var(--bg-lightpink);
-    transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 700ms cubic-bezier(0.4, 0, 0.2, 1);
-    overflow: hidden;
-}
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
 
-.contacts-modal__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: var(--bg-lightpink);
-    border: 1px solid var(--cl-red);
-    border-radius: 50%;
-    padding: 0;
-    margin-top: 8px;
-    margin-right: 8px;
-    width: 25px;
-    height: 25px;
-    fill: var(--cl-red);
-}
+    background-image: url(./../images/header/cross.svg);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
 
-.contacts-modal__button:hover,
-.contacts-modal__button:focus {
-    background-color: var(--cl-red);
-    border: var(--cl-red);
-    fill: var(--cl-light);
-}
+    border-color: transparent;
 
+    @media screen and (min-width: 768px) {
+        right: 32px;
+    }
+}
 
 .modal-wrap {
     display: block;
     text-align: center;
     margin-bottom: 20px;
+    width: 100%;
 }
 
 .modal-text__city {
-    margin-bottom: 15px;
-            font-weight: 700;
-            font-size: 16px;
-            line-height: 1.86;
-        
-            @media screen and (min-width: 768px) {
-                font-size: 14px;
-                margin-bottom: 12px;
-            }
-        
-            @media (min-width: 1280px) {
-                font-size: 16px;
-                margin-bottom: 8px;
-            }
+font-family: var(--font-secondary);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: var(--cl-light);
+
+    @media screen and (min-width: 768px) {
+        font-size: 48px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 58px;
+    }
+}
+
+address {
+    margin-top: 10px;
+}
+
+.map {
+    width: 100%;
+    height: 200px;
+    margin-top: 5px;
+@media (min-width: 480px) {
+    width: 400px;
+    height: 300px;
+}
+@media (min-width: 768px) {
+    width: 500px;
+    height: 400px;
+}
 }

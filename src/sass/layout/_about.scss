@@ -12,10 +12,8 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    .about {
-      background-image: url(../images/about/bg-milk-left-tel-2x.png),
-        url(../images/about/bg-milk-right-tel-2x.png);
-    }
+    background-image: url(../images/about/bg-milk-left-tel-2x.png),
+      url(../images/about/bg-milk-right-tel-2x.png);
   }
 
   @media screen and (min-width: 768px) {
@@ -33,10 +31,8 @@
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      .about {
-        background-image: url(../images/about/bg-milk-left-2x.png),
-          url(../images/about/bg-milk-right-2x.png);
-      }
+      background-image: url(../images/about/bg-milk-left-2x.png),
+        url(../images/about/bg-milk-right-2x.png);
     }
   }
 }

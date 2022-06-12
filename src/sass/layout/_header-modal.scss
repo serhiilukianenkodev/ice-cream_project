@@ -171,4 +171,8 @@ form {
     margin: 0 auto;
     padding-left: 37px;
     padding-right: 37px;
+    gap: 12px;
+    transition-property: background-color;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
 }

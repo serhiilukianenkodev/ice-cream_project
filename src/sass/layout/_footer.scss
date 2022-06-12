@@ -124,15 +124,14 @@
   width: 34px;
   height: 34px;
 
-  fill: pink;
+  fill: var(--cl-pink);
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
 
   &:hover,
   &:focus {
-    fill: red;
-    border-radius: 50px;
+    fill: var(--cl-red);
   }
 }
 

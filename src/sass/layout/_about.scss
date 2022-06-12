@@ -23,7 +23,7 @@
     background-image: none;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     padding-top: 60px;
 
     background-image: url(../images/about/bg-milk-left-1x.png),
@@ -55,7 +55,7 @@
     font-size: 26px;
     line-height: 1.15;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.13;
   }
@@ -76,7 +76,7 @@
   @media screen and (min-width: 768px) {
     font-size: 48px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 58px;
   }
 }
@@ -88,7 +88,7 @@
 
     margin-top: 40px;
   }
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-top: 80px;
     justify-content: space-around;
     align-items: center;
@@ -118,7 +118,8 @@
     margin: 0;
     max-width: 334px;
   }
-  @media screen and (min-width: 1280px) {
+
+  @media screen and (min-width: 1200px) {
     max-width: 463px;
   }
 }
@@ -172,6 +173,10 @@
   border: none;
   border-radius: 22px;
 
+  transition-property: background-color;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
   @media screen and (min-width: 480px) {
     margin-top: 40px;
   }
@@ -179,5 +184,11 @@
   @media screen and (min-width: 768px) {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--bg-hover);
   }
 }

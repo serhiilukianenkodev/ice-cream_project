@@ -1,0 +1,118 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.2);
+
+  transition-property: opacity;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  z-index: 6;
+  overflow: scroll;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.about-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+  width: 100%;
+  padding: 25px 20px;
+
+  border-radius: 22px;
+  background: var(--bg-modal);
+
+  transition-property: transform;
+  transition-duration: var(--transition-duration);
+  transition-timing-function: var(--transition-timing-function);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+    padding: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.is-hidden .about-modal {
+  transform: translate(-50%, -50%) scale(0.8);
+}
+
+.about-modal__btn {
+  @media screen and (max-width: 480px) {
+    top: 10px;
+  }
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+
+  background-image: url(./../images/header/cross.svg);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    right: 32px;
+  }
+}
+
+.about-modal__title {
+  font-family: var(--font-secondary);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: var(--cl-light);
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+
+.about-modal__description {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.58;
+
+  color: var(--cl-dark);
+
+  @media screen and (min-width: 480px) {
+    font-size: 14px;
+    line-height: 1.76;
+  }
+  @media screen and (min-width: 768px) {
+    line-height: 1.94;
+  }
+}
+
+.about-modal__list {
+  margin-top: 10px;
+  margin-bottom: -10px;
+  padding-left: 15px;
+}
+
+.about-modal__item {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,42 @@
+<div class="backdrop is-hidden" franchise-modal>
+  <div class="franchise-modal">
+    <button class="franchise-modal__btn" franchise-modal-close></button>
+    <form class="franchise-form">
+      <p class="franchise-form__title">Want to buy a franchise?</p>
+      <label class="franchise-form__label" for="username">Name</label>
+      <input
+        class="franchise-form__input"
+        type="text"
+        name="username"
+        id="username"
+        required
+      />
+      <label class="franchise-form__label" for="phonenumber">Number</label>
+      <input
+        class="franchise-form__input"
+        type="tel"
+        name="phonenumber"
+        id="phonenumber"
+        required
+      />
+
+      <label class="franchise-form__label" for="email">Email</label>
+      <input
+        class="franchise-form__input"
+        type="email"
+        name="email"
+        id="email"
+        required
+      />
+      <label class="franchise-form__label" for="comments">Comment</label>
+      <textarea
+        class="franchise-form__comments"
+        id="comments"
+        name="comments"
+        placeholder="Введите текст"
+      ></textarea>
+
+      <button class="franchise-form__button button" type="submit">Send</button>
+    </form>
+  </div>
+</div>

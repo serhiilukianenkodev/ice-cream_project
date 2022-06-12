@@ -77,12 +77,13 @@
     padding-right: 37px;
     font-size: 16px;
     
-    transition-property: opacity;
+    transition-property: opacity, background-color;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 
     @media screen and (min-width: 768px) {
-        display: block;
+        display: flex;
+        gap: 12px;
         animation-name: pulse;
         animation-delay: 2500ms;
         animation-duration: 2000ms;

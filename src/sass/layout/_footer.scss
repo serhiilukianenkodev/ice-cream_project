@@ -50,25 +50,23 @@
   color: var(--cl-pink);
   font-size: 18px;
   line-height: calc(21 / 18);
-  margin-bottom: 16px;
   width: 234px;
 
   @media screen and (min-width: 768px) {
     font-size: 26px;
     line-height: calc(30 / 26);
-    margin-bottom: 12px;
   }
 
   @media screen and (min-width: 1280px) {
     font-size: 30px;
     line-height: calc(34 / 30);
-    margin-bottom: 16px;
     width: 100%;
   }
 }
 
 .footer__title-text {
   display: block;
+  margin-top: 16px;
   font-family: var(--font-secondary);
   font-size: 34px;
   line-height: calc(39 / 34);
@@ -77,12 +75,14 @@
   width: 200px;
 
   @media screen and (min-width: 768px) {
+    margin-top: 12px;
     font-size: 48px;
     line-height: calc(55 / 48);
     letter-spacing: 0.06em;
   }
 
   @media screen and (min-width: 1280px) {
+    margin-top: 16px;
     font-size: 58px;
     line-height: calc(66 / 58);
     letter-spacing: 0.06em;

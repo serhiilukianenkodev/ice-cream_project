@@ -6,8 +6,8 @@
   background-image: url(../images/about/bg-milk-left-tel-1x.png),
     url(../images/about/bg-milk-right-tel-1x.png);
   background-repeat: no-repeat;
-  background-position: 0 77%, 100% 80%;
-  background-size: auto auto;
+  background-position: 0 100%, 100% 100%;
+  background-size: auto;
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -26,13 +26,13 @@
 
     background-image: url(../images/about/bg-milk-left-1x.png),
       url(../images/about/bg-milk-right-1x.png);
-    background-position: 0 0, 100% 100%;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url(../images/about/bg-milk-left-2x.png),
         url(../images/about/bg-milk-right-2x.png);
+      background-size: contain;
     }
   }
 }

@@ -1,12 +1,12 @@
 (() => {
     const refs = {
-      openMobileModalBtn: document.querySelector('[mobile-modal-open]'),
+      openMobileModalBtn: document.querySelector('[data-mobile-modal-open]'),
       closeMobileModal: document.querySelector("[data-menu]"),
       closeMobileModalBtn: document.querySelector("[data-menu-button]"),
 
-      openHeaderModalBtn: document.querySelector('[header-modal-open]'),
-      closeHeaderModalBtn: document.querySelector('[header-modal-close]'),
-      HeaderModal: document.querySelector('[header-modal]'),
+      openHeaderModalBtn: document.querySelector('[data-header-modal-open]'),
+      closeHeaderModalBtn: document.querySelector('[data-header-modal-close]'),
+      HeaderModal: document.querySelector('[data-header-modal]'),
     };
     
     refs.openMobileModalBtn.addEventListener('click', toggleModalMenu);

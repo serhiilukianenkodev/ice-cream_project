@@ -26,17 +26,18 @@
 .logo {
     display: flex;
     align-items: center;
-    gap: 20px;
-
-    @media screen and (min-width: 808px) and (max-width: 1280px) {}
-}
-
-.logo__title {
+    
     font-size: 26px;
     line-height: 1.15;
     color: var(--cl-red);
     font-family: var(--font-secondary);
     text-transform: uppercase;
+
+    @media screen and (min-width: 808px) and (max-width: 1280px) {}
+}
+
+.logo__img {
+    margin-right: 20px;
 }
 
 .nav {

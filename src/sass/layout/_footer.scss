@@ -106,10 +106,16 @@
   }
 }
 
+
+
 .social__item {
   display: block;
   width: 100%;
   height: 100%;
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: var(--cl-red);
+  }
 }
 
 .social__icon {
@@ -120,11 +126,6 @@
   transition-property: fill;
   transition-duration: var(--transition-duration);
   transition-timing-function: var(--transition-timing-function);
-
-  &:hover,
-  &:focus {
-    fill: var(--cl-red);
-  }
 }
 
 .footer__contact_wrapper {

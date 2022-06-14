@@ -301,9 +301,10 @@
 .button-arrow:hover,
 .button-arrow:focus {
   transform: scale(1.1);
+  background-color: var(--bg-hover);
 }
 
 .arrow-logo {
   display: inline-block;
-  fill: red;
+  fill: var(--cl-red);
 }

@@ -92,15 +92,13 @@
 
 .titlebox__list {
     display: flex;
-    gap: 8px;
 
     @media screen and (min-width: 768px) {
         margin-bottom: 20px;
     }
 
     @media screen and (min-width: 1280px) {
-        margin-bottom: 20px;
-        gap: 12px;
+        margin-bottom: 20px;    
     }
 }
 
@@ -125,6 +123,13 @@
     &:active,
     &:focus {
         background-color: var(--bg-hover);
+    }
+
+    &:first-child {
+        margin-right: 8px;
+        @media screen and (min-width: 1280px){
+            margin-right: 12px;
+        }
     }
 
     @media screen and (min-width: 1280px) {
@@ -203,12 +208,12 @@
 
     border-radius: 50%;
     border: transparent;
-    background-image: url(./../images/products/right.png);
+   
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 
-    transition-property: opacity;
+    transition-property: background-color, transform;
     transition-duration: var(--transition-duration);
     transition-timing-function: var(--transition-timing-function);
 
@@ -220,7 +225,22 @@
     &:hover,
     &:active,
     &:focus {
-        opacity: 0.8;
+        background-color: var(--bg-hover);
+        transform: scale(1.1);
+    }
+}
+
+.titlebox__icon {
+    fill: var(--bg-red);
+    transition-property: fill, transform;
+    transition-duration: var(--transition-duration);
+    transition-timing-function: var(--transition-timing-function);
+
+    .titlebox__button:hover, &
+    .titlebox__button:active, &
+    .titlebox__button:focus & {
+        fill: var(--bg-accent-hover);
+        transform: scale(1.1);
     }
 }
 
@@ -316,7 +336,6 @@
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;
-        gap: 16px;
     }
 }
 
@@ -326,6 +345,11 @@
     padding-right: 10px;
 
     z-index: 1;
+
+    &:first-child {
+      margin-bottom: 16px;
+    }
+
     @media screen and (min-width: 1280px){
         padding-right: 16px;
     }
